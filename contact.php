@@ -34,7 +34,7 @@ End of message
 
 /* Send the message using mail() function */
 $email = new SendGrid\Email();
-$email->addTo('bart@tagtagcity.com')->    
+$email->addTo('bart@tagtagcity.com;mathieu@tagtagcity.com')->
     setFrom('info@mobicities.com')->
     setSubject('Request for information from MobiCities website')->
     setText($message);
